@@ -10,7 +10,7 @@ import { router } from './routes';
 
 const app = express();
 
-const cors = require('cors')
+import cors from 'cors';
 
 app.use(express.json());
 app.use(cors()); //habilitando p/ qualquer IP/URL fazer requisição nessa API

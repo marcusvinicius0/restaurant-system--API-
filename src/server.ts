@@ -38,6 +38,8 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction)=> {
     })
 })
 
+const host = '0.0.0.0';
 
-app.listen(process.env.PORT || 3001, () => console.log('server on'))
+
+app.listen(process.env.PORT || 3000, host, () => console.log('server on'))
 

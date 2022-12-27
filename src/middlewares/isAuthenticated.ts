@@ -27,7 +27,7 @@ export function isAuthenticated(
             process.env.JWT_SECRET
         ) as PayLoad;
 
-        //to recover token id and put insade a variable user_id in req.    
+        //to recover token id and put inside a variable user_id in req.    
         req.user_id = sub;
 
        return next();
